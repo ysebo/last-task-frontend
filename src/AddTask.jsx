@@ -11,7 +11,6 @@ const AddTask = () => {
       setTaskInput("");
     }
   };
-
   return (
     <div>
       <input
