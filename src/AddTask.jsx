@@ -1,13 +1,26 @@
-const AddTask = ({ taskInput, setTaskInput, onAddTask }) => {
+import { useState } from "react";
+import { useTasks } from "./TaskContext";
+
+const AddTask = () => {
+  const { addTask } = useTasks();
+  const [taskInput, setTaskInput] = useState("");
+
+  const handleAddTask = () => {
+    if (taskInput.trim()) {
+      addTask(taskInput);
+      setTaskInput("");
+    }
+  };
+
   return (
     <div>
       <input
         type="text"
         value={taskInput}
-        placeholder="Tasku napishi"
+        placeholder="Tasku napishite pj"
         onChange={(e) => setTaskInput(e.target.value)}
       />
-      <button onClick={onAddTask}>Add Task</button>
+      <button onClick={handleAddTask}>Add Task</button>
     </div>
   );
 };
