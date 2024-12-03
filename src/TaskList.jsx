@@ -1,13 +1,15 @@
 import { useTasks } from "./TaskContext";
-import TaskItem from "./TaskItem";
 
 const TaskList = () => {
-  const { tasks } = useTasks();
+  const { tasks, deleteTask } = useTasks(); 
 
   return (
     <ul>
       {tasks.map((task, index) => (
-        <TaskItem key={index} task={task} />
+        <li key={index}>
+          {task}{" "}
+          <button onClick={() => deleteTask(index)}>Delete</button>
+        </li>
       ))}
     </ul>
   );
