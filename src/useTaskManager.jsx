@@ -17,7 +17,6 @@ const useTaskManager = () => {
     tasks,
     addTask,
     deleteTask,
-    getTasks,
   };
 };
 

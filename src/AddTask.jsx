@@ -18,7 +18,7 @@ const AddTask = () => {
         type="text"
         value={taskInput}
         onChange={(e) => setTaskInput(e.target.value)}
-        placeholder="Ентер твою таску"
+        placeholder="Napishite tasku:"
       />
       <button onClick={handleAddTask}>Add Task</button>
     </div>
