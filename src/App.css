@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color:rgb(11, 159, 159);
+  background-color:rgb(142, 172, 142);
   display: flex;
   justify-content: center; 
   align-items: flex-start; 
@@ -14,7 +14,7 @@ body {
   text-align: center;  
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  background-color: rgb(172, 163, 166);
+  background-color: rgb(55, 61, 66);
   border-radius: 8px;
   width: 100%;
   max-width: 400px;
